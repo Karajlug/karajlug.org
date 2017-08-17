@@ -1,9 +1,9 @@
 # Site specific settings
-title: "Dublin LUG Home Page"
-name: "Dublin LUG"
-keywords: "linux, dublin, users group, lug, free software, gnu"
+title: "KarajLUG Home Page"
+name: "KarajLUG"
+keywords: "linux, Karaj, Tehran, users group, lug, free software, gnu"
 baseurl: ""
-url: "http://dlug.ie"
+url: "http://karajlug.org"
 description: "TODO"
 cover: "/assets/img/cover.svg"
 fanpage_id: ""
@@ -19,7 +19,7 @@ ssl: false # It will redirect to https
 #disqus: test
 twitter:
 facebook:
-github: //github.com/dublin-lug/
+github: //github.com/karajlug/
 google:
 
 # Build settings
