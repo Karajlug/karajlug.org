@@ -1,5 +1,5 @@
-# Dublin Linux Users Group
-This is the official Dublin LUG website application.
+# Karaj Linux Users Group
+This is the official KarajLug website application.
 
 ## Requirements
 * Ruby `>= 2.0`
