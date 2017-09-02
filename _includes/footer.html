@@ -1,9 +1,21 @@
 <footer>
-  {% if page.comments %}
-  {% include disqus.html %}
-  {% endif %}
-
-  <section>
-    © 2017 Dublin Linux Users Group
-  </section>
+    {% if page.comments %} {% include disqus.html %} {% endif %}
+    <section class="kl-sponsors">
+    <h4>حامیان ما | Sponsors</h4>
+     	<ul class="sponsors">
+     		<li><a href="http://www.karanic.com/" target="_blank"><img src="{{ site.baseurl }}/assets/img/logos/karanic.png" alt=""></a></li>
+     		<li><a href="http://oreilly.com/" target="_blank"><img src="{{ site.baseurl }}/assets/img/logos/oreilly.jpg" alt=""></a></li>
+     		<li><a href="http://www.yellowen.com/" target="_blank"><img src="{{ site.baseurl }}/assets/img/logos/yellowen.png" alt=""></a></li>
+     	</ul>
+    </section>
+	<section class="kl-socials">
+		<ul class="social">
+			<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		</ul>
+	</section>
+    <section class="kl-cp">
+      <p>© 2017 KarajLug Users Group</p>
+    </section>
 </footer>
