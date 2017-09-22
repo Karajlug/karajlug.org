@@ -1,0 +1,32 @@
+
+[update] at user:ashly add a country
+db.users.update({username: "ashli"}, {$set: {country: "Canada"}})
+
+---------------------------------------------------------------
+
+[delete] at user:ashly add a country
+db.users.update({username: " ashli "}, {$unset: {country: 1}})
+
+---------------------------------------------------------------
+
+{ username: " ashli ", 
+favorites: { 
+cities: ["Chicago", "Cheyenne"], 
+movies: ["Casablanca", "For a Few Dollars More", "The Sting"] { 
+} 
+
+
+[update] a user favorits movies
+> db.users.update( {username: " ashli "}, 
+{ $set: {favorites: 
+{ 
+cities: ["Chicago", "Cheyenne"], 
+movies: ["Casablanca", "The Sting"] 
+} 
+} 
+
+
+[find] a user favorits movie is: Casablanca
+db.users.find({"favorites.movies": "Casablanca"})
+
+---------------------------------------------------------------

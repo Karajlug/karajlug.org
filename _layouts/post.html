@@ -2,12 +2,30 @@
 layout: default
 ---
 
-<header>
+<header class="post-header">
   <h1>{{ page.title }}</h1>
-  نویسنده
-  {% for author in page.authors %}
-  <author><a href="{{ site.baseurl }}/#{{ author }}">{{ author }}</a></author>{% if forloop.last == false %}, {% endif %}
-  {% endfor %}
+  <ul class="post-to-socials">
+  	به اشتراک بگذارید
+ 	<li>
+ 		<a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+ 	</li>
+ 	<li>
+ 		<a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+ 	</li>
+ 	<li>
+ 		<a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+ 	</li>
+  </ul>
 </header>
-
-{{ content }}
+<div class="post-entry">
+	{{ content }}
+</div>
+<footer class="post-footer">
+	<author class="post-author">نویسنده: <a href="{{ site.baseurl }}/{{ page.author }}">{{ page.author }}</a></author>
+	برچسب ها:
+	<ul class="post-tags">	
+		{% for keyword in page.keywords %}
+		<li><a href="">{{ keyword }}#</a></li>
+		{% endfor %}
+	</ul>	
+</footer>
