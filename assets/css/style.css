@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css?family=Lato');
 /* fonts */
 @font-face {
   font-family: IRANSans;
@@ -256,6 +257,8 @@ body {
   	background-color: #fff;
   	color: #666;
 	font-family: "Open Sans";
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
 	display: flex;
 	flex-direction: column;
 }
@@ -309,14 +312,12 @@ body {
 .logo h1 {
 	display: inline-block;
     font-size: 28px;
-    font-family: Open-Sans;
+    font-family: "Lato";
     color: #444;
     margin-left: 8px;
 }
 .logo:hover {
 	cursor: pointer;
-	fill: #388AFF;
-	transition: all .3s step-end;
 }
 .brand {
   	width: 40px;
@@ -371,11 +372,14 @@ main {
 }
 .post {
 	background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .15);
 	padding: 15px 25px;
 	margin-top: 15px;
 	margin-bottom: 15px;
     list-style-type: none;
+}
+.post:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .09);
 }
 .post a {
     text-decoration: none;
@@ -387,8 +391,80 @@ main {
     font-size: 14px;
     font-weight: 400;
 }
-
-
+.post-header {
+    display: flex;
+    flex-direction: row;
+}
+.post-to-socials {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    margin-right: auto;
+    padding-right: 0;
+    font-size: 14px;
+}
+.post-to-socials a {
+    display: block;
+    padding: 2px 5px;
+    margin: 0 5px;
+}
+.post-to-socials li:first-child a {
+    color: #D64444;
+}
+.post-to-socials li:nth-child(2) a {
+    color: #3A6CD1;
+}
+.post-to-socials li:last-child a {
+    color: #3CCAE9;
+}
+.post-to-socials a:hover {
+    background-color: #fff;
+}
+.post-to-socials i {
+    vertical-align: middle;
+}
+.post-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.post-author {
+    background-color: #eee;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.post-author a {
+    color: #388AFF;
+    text-decoration: none;
+}
+.post-tags {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    list-style: none;
+    margin-right: 5px;
+    padding-right: 0;
+}
+.post-tags li {
+    background-color: #eee;
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin: 0 3px;
+}
+.post-tags a {
+    text-decoration: none;
+    color: #388AFF;
+}
+@media screen and (max-width: 720px) {
+    .post-footer {
+        flex-direction: column;
+    }
+}
 /* footer */
 footer {
 	display: flex;
