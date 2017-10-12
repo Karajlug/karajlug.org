@@ -4,7 +4,7 @@ title: کرج لاگ
 date: 2017-06-24 12:00:00
 categories: posts
 comments: false
-description: گروه کاربران لینوکس کرج، کرج لاگ
+description: در دست طراجی ...
 keywords: [key, word, about, to, this, SEO]
 author: lxsameer
 ---
