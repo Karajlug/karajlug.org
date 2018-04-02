@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KarajLUG - Articles</title>
+    <description>TODO</description>
+    <link>
+    http://localhost:4000</link>
+    
+      <item>
+        <title>این دامنه به فروش می رسد</title>
+        
+          <description>پایات کار کرج لاگ....</description>
+        
+        <pubDate>Mon, 02 Apr 2018 07:00:00 +0000</pubDate>
+        <link>/posts/april-fool/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/april-fool/</guid>
+      </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>KarajLUG</title>
+  <link href="http://localhost:4000/atom.xml" rel="self" />
+  <link href="http://localhost:4000/"/>
+  <updated>2018-04-02T12:34:03+01:00</updated>
+  <id>http://localhost:4000</id>
+  <author>
+    <name>KarajLUG</name>
+  </author>
+  
+    <entry>
+      <title>این دامنه به فروش می رسد</title>
+      <link href="/posts/april-fool/" />
+      <updated>2018-04-02T08:00:00+01:00</updated>
+      <id>/posts/april-fool</id>
+      <content type="html">پایات کار کرج لاگ....</content>
+    </entry>
+  
+</feed>
